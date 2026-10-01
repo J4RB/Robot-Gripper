@@ -1,72 +1,52 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** andreasgdp, Robot-hand-semester-2, AndreasGuldberg, andreasgdp@gmail.com
--->
+*Originally developed as a group project on the second semester of the Bachelor of Engineering in Robot Technology at the University of Southern Denmark (SDU). This repository is a personal fork maintained for portfolio purposes.*
 
+# Robot Gripper
+A 3D-printed robot gripper developed as a second-semester project at the **University of Southern Denmark (SDU)**.
 
+The gripper integrates with a **Universal Robots UR5** through a custom **URCaps plugin** and is controlled by a **C++ program running on a Raspberry Pi**. Communication between the UR5 and Raspberry Pi is handled using **XML-RPC**.
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-<!-- ABOUT THE PROJECT -->
-## About The Project
-<p align="center"> 
-<img src="https://user-images.githubusercontent.com/39928082/200006428-1ced1bf0-f8ad-4f93-9450-786b471afd57.png" alt="Gripper" title="Gripper" width="30%" height="30%"/> 
+<p align="center">
+<img width="800" height="450" alt="beer-gripper-pouring" src="https://github.com/user-attachments/assets/5bd67a60-3cb6-4755-94a6-accf2fd6c0dc" />
 </p>
 
-### Abstract
-In this project, we have worked to make a gripper that can be mounted on and integrated
-with a UR5 robot. The gripper has been 3D modelled, 3D printed and mounted on a UR5 robot.
-The gripper is controlled by the movements of a motor located in the center of the gripper. The engine receives signals
-to go in each direction at varying speed from an electrical circuit which receives signals from
-a C++ program running on a Raspberry Pi. We have made a URCaps extension for ours
-grabs a UR5. We have made an XML-RPC server running on a Raspberry Pi to be able to
-communicate with the URCaps extension. With this XML-RPC communication we have the opportunity to
-to control the gripper from a UR program running on the UR5 robot with our URCaps extension.
-We have also made a GUI running alongside the server on the Raspberry Pi that we can use
-to control the gripper directly.
+
+## Features
+- Custom 3D-printed gripper designed for UR5
+- URCaps plugin for integration with UR programs
+- C++ control software running on Raspberry Pi
+- XML-RPC communication between UR5 and Raspberry Pi
+- GUI for direct gripper control
+- PWM-based motor speed control
+- Current control for detecting gripping resistance
+- Two-finger parallel gripper mechanism
 
 
-### Built With
+## Technologies
+- C++
+- Java
+- URCaps
+- XML-RPC
+- Raspberry Pi
+- Universal Robots UR5
+- 3D Modeling and Printing
+- Electronics
 
-* [C++]()
-* [Pure manpower]()
 
+## Showcase
+Demo Video: [![Robot Gripper Demo](images_readme/demo-thumbnail.jpg)](https://www.youtube.com/watch?v=uMQ_LyqsUV8)
 
+<p align="center">
+<img width="3624" height="3000" alt="gripperv2(1)" src="https://github.com/user-attachments/assets/30bdb575-691b-43ba-b09b-771972d8724a" />
+</p>
 
+<p align="center"> 
+<img width="808" height="636" alt="urcaps_installation_node" src="https://github.com/user-attachments/assets/021e77aa-3bcd-4e7c-bfe1-0a0a6c265bd1" />
+</p>
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/andreasgdp/Robot-hand-semester-2.svg?style=flat-square
-[contributors-url]: https://github.com/andreasgdp/Robot-hand-semester-2/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/andreasgdp/Robot-hand-semester-2.svg?style=flat-square
-[forks-url]: https://github.com/andreasgdp/Robot-hand-semester-2/network/members
-[stars-shield]: https://img.shields.io/github/stars/andreasgdp/Robot-hand-semester-2.svg?style=flat-square
-[stars-url]: https://github.com/andreasgdp/Robot-hand-semester-2/stargazers
-[issues-shield]: https://img.shields.io/github/issues/andreasgdp/Robot-hand-semester-2.svg?style=flat-square
-[issues-url]: https://github.com/andreasgdp/Robot-hand-semester-2/issues
-[license-shield]: https://img.shields.io/github/license/andreasgdp/Robot-hand-semester-2.svg?style=flat-square
-[license-url]: https://github.com/andreasgdp/Robot-hand-semester-2/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/andreas-g-d-petersen-11707518b/
-[product-screenshot]: images_readme/robot_hand.jpg
+<p align="center">
+<img width="809" height="638" alt="urcaps_program_node" src="https://github.com/user-attachments/assets/9410aa4e-cadb-4b48-a328-2c47b8439539" />
+</p>
+
+<p align="center">
+<img width="537" height="422" alt="PI_GUI" src="https://github.com/user-attachments/assets/b09181b2-8c75-4136-81cf-d822a92e33d8" />
+</p>
